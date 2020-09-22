@@ -7,7 +7,7 @@ template_type: TF
 
 # The valid values for terraform_version are 0.11 or 0.12
 				
-terraform_version: 0.12
+terraform_version: 0.11
 
 # If terraform_version is 0.11, then terraform_011_parameters 
 # is required.
