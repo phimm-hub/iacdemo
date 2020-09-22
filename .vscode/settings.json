@@ -1,0 +1,7 @@
+{
+    "prismaCloud.accessURL.PrismaCloudAPI URL": "https://api.prismacloud.io",
+    "prismaCloud.loginCredentials.AccessKey": "3a824eac-c9c0-4651-90b4-734ed0d30e1b",
+    "prismaCloud.loginCredentials.SecretKey": "rpi3Qz8iXCDKIN12E0/wEiqav3E=",
+    "prismaCloud.assetDetails.AssetName": "Prisma IaC Scan",
+    "github.upstream": "https://github.com/phimm-hub/demo.git"
+}

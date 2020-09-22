@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PrismaScanConfig">
+    <option name="accessKey" value="3a824eac-c9c0-4651-90b4-734ed0d30e1b" />
+    <option name="prismaIaCScanAPIUrl" value="https://api.prismacloud.io" />
+    <option name="secretKey" value="rpi3Qz8iXCDKIN12E0/wEiqav3E=" />
+  </component>
+</project>
