@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+   proxy:
+     container_name: proxy
+     image: proxy:1.0
+     volumes:
+       - ./nginx.conf.proxy:/etc/nginx/conf.d/default.conf
+     ports:
+       - 80:80/tcp
+       - 443:443/tcp
+
+   web:
+     container_name: web
+     image: web:1.0
+     volumes:
+       - ./nginx.conf.web:/etc/nginx/conf.d/default.conf
+       - ./index.html:/usr/share/nginx/html/uj47G/index.htm
+     ports:
+       - 9090:80/tcp

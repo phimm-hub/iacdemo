@@ -1,0 +1,4 @@
+#get base nginx RP base image
+
+FROM nginx:stable-alpine
+

@@ -1,0 +1,26 @@
+Prerequisites: 
+-Docker installed on local machine
+-Ensure you're logged into your Docker account
+-Run commands from the directory containing all of the Dockerfiles, config files
+
+
+Usage:
+
+1. Build Docker Images with correct image names
+    - cp Dockerfile.web Dockerfile
+    - docker build -t web:1.0 .
+    - cp Dockerfile.proxy Dockerfile
+    - docker build -t proxy:1.0 .
+
+*Note* the docker-compose.yml file specifies the tag so you must build the Dockerimages with -t specifying name and tag as shown above.
+
+2. Start containers using docker-compose
+    - docker-compose up -d 
+    - docker ps -a (verify containers running)
+
+3. Use browser in incognito mode (to prevent) and access web app
+    - https://localhost/uj47G/index.htm
+    - http://localhost/uj47G/index.htm
+
+
+

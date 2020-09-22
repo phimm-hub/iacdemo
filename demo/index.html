@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='https://app.securiti.ai/css/libs/cmp/cookieconsent.css' />
+<title>Welcome</title>
+</head>
+<body>
+<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+<script>
+	bannerParams = window.bannerParams || {};
+	var options = JSON.parse('{"href": "https://www.lovesac.com/privacy-policy", "text": {}, "color": {}, "theme": "1", "colour": {}, "layout": "block", "policy": "policylink", "position": "top", "compliance": "info"}');
+	bannerParams = {
+		accessToken: '15274b0f-6921-4cc0-9047-1e2e11249587',
+		baseUrl: 'https://app.securiti.ai',
+		position: '',
+		layout: 'banner-layout',
+		theme: '',
+		domainId: 11,
+		domainUrl: 'https://www.lovesac.com',
+		options
+	};
+	(function f() {
+		var s = document.createElement('script');
+		s.async = 1;
+		s.src = bannerParams.baseUrl + '/js/libs/cmp/consentBanner.js';
+		var parent_node = document.head || document.body;
+		parent_node.appendChild(s);
+		if (!window.jQuery) {
+			let s = document.createElement('script');
+			s.async = 1;
+			s.src = 'https://code.jquery.com/jquery-1.12.4.js';
+			let parent_node = document.head || document.body;
+			parent_node.appendChild(s);
+		}
+	})();
+</script>
+Welcome
+</body>
+</html>

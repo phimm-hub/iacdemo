@@ -1,0 +1,4 @@
+#get base image for web server
+
+FROM nginx:stable-alpine
+

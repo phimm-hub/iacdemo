@@ -1,0 +1,46 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "70a5851b-38d3-4145-a430-fa7599c158b7": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 87,
+                    "y": 56
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "2150b8e4-9fe0-4013-afa1-b24af67e5de6": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 200,
+                    "y": 50
+                },
+                "z": 0,
+                "embeds": []
+            }
+        }
+    },
+    "Resources": {
+        "PhimmDemoBucket1": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "AccessControl": "PublicReadWrite",
+                "BucketName": "PhimmDemoBucket1",
+                "PublicAccessBlockConfiguration" : {
+                        "BlockPublicAcls" : "false",
+                        "BlockPublicPolicy" : "false",
+                        "IgnorePublicAcls" : "false",
+                        "RestrictPublicBuckets" : "false"
+                      }
+                }
+            }
+        }
+    }
