@@ -24,4 +24,7 @@ resource "aws_lambda_function" "test_lambda" {
   handler       = "exports.test"
   source_code_hash = filebase64sha256("lambda_function_payload.zip")
   runtime = "nodejs12.x"
+  tracing_config {
+    mode = "PassThrough"
+  }
 }
