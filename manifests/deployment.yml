@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: phimmhubiacdemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phimmhubiacdemo
+  template:
+    metadata:
+      labels:
+        app: phimmhubiacdemo 
+    spec:
+      containers:
+        - name: phimmhubiacdemo 
+          image: phimmacr.azurecr.io/phimmhubiacdemo
+          ports:
+          - containerPort: 80
